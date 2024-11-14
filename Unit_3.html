@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Study Guide - Unit 3: Hazards and Risks Identification</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <h1>Unit 3: Hazards and Risks Identification - Interactive Study Guide</h1>
+
+  <div class="section">
+    <div class="section-header" ondblclick="toggleSection('section1');">
+      1. Hazards and Risks Identification
+    </div>
+    <div class="section-content" id="section1">
+      <p><b>What is a Hazard?</b> A hazard is something that can hurt you or make you sick.</p>
+      <p><b>Example:</b> Imagine a wet floor in a school hallway. It’s slippery and could make you fall—that’s a hazard.</p>
+      <p><b>What is a Risk?</b> A risk is the chance that you might actually get hurt by the hazard.</p>
+      <p><b>Example:</b> If you run down that wet hallway, there’s a high risk you’ll slip. But if you walk carefully or avoid it, the risk is lower.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header" ondblclick="toggleSection('section2');">
+      2. Safety Appraisal, Analysis, and Control
+    </div>
+    <div class="section-content" id="section2">
+      <p><b>Safety Appraisal:</b> This is like checking to make sure everything is safe.</p>
+      <p><b>Example:</b> Think of your teacher inspecting the playground before recess to make sure there’s no broken equipment.</p>
+      <p><b>Safety Analysis:</b> Studying how safe things are, like figuring out which areas might be dangerous.</p>
+      <p><b>Example:</b> If there’s a rusty swing, your teacher might notice it could hurt you and decide to get it fixed.</p>
+      <p><b>Control:</b> This means taking action to make things safe.</p>
+      <p><b>Example:</b> Your teacher might put up a sign that says “Do Not Use” on the rusty swing until it’s repaired.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header" ondblclick="toggleSection('section3');">
+      3. Plant Safety Inspection
+    </div>
+    <div class="section-content" id="section3">
+      <p><b>Definition:</b> A plant safety inspection is like a school inspection but for a factory, where people check for things that might cause accidents.</p>
+      <p><b>Example:</b> In school, a fire drill checks that everyone knows where to go in an emergency. In a factory, an inspection checks for safe exits, working alarms, and clear walkways.</p>
+      <p><b>Checklist:</b> Inspectors use a checklist to make sure they don’t forget anything important, like looking for slippery floors, safe equipment, and fire extinguishers.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header" ondblclick="toggleSection('section4');">
+      4. Hazard and Risk Assessment Techniques
+    </div>
+    <div class="section-content" id="section4">
+      <p><b>Definition:</b> Risk assessment techniques are like planning ahead to see if anything might go wrong and how bad it could be.</p>
+      <p><b>Example:</b> When you go to a new playground, you might notice if there are any broken swings or sharp edges. That’s assessing risks.</p>
+      <p><b>Techniques Used:</b> Common techniques include checklists and brainstorming all the things that could go wrong (like Job Hazard Analysis).</p>
+      <p><b>Importance:</b> By knowing which areas are risky, people can fix them or tell others to be careful.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header" ondblclick="toggleSection('section5');">
+      5. HAZOP (Hazard and Operability) Analysis
+    </div>
+    <div class="section-content" id="section5">
+      <p><b>What is HAZOP?</b> HAZOP stands for Hazard and Operability Analysis, which is a way to look at different steps of a process and think of "what if" scenarios.</p>
+      <p><b>Example:</b> Imagine baking a cake, but you ask questions like, “What if the oven doesn’t turn on?” or “What if I add too much flour?” This helps you prepare for anything that could go wrong.</p>
+      <p><b>Benefits:</b> By thinking about these "what-if" questions, you can prepare solutions in advance.</p>
+      <p><b>Documentation:</b> The answers to these questions are written down so everyone knows what to do if something happens.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header" ondblclick="toggleSection('section6');">
+      6. FTA (Fault Tree Analysis) and ETA (Event Tree Analysis)
+    </div>
+    <div class="section-content" id="section6">
+      <p><b>FTA (Fault Tree Analysis):</b> Imagine you have a tree, but it starts with a problem at the top, like "the lights go out." Then, you trace down to find out why this might have happened, like maybe a wire broke or there was a power outage.</p>
+      <p><b>Example:</b> If your flashlight doesn’t work, you might check the batteries, the bulb, and the switch to find out the exact reason. This helps in finding the "root cause" of a problem.</p>
+      <p><b>ETA (Event Tree Analysis):</b> This is like a story tree. You start with one event and see all the different things that could happen next.</p>
+      <p><b>Example:</b> If you spill a drink, one branch could be "clean it up quickly" (which prevents accidents), or another branch could be "leave it" (which might cause someone to slip). ETA helps plan for all possible outcomes and choose the best responses.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header" ondblclick="toggleSection('section7');">
+      7. On-Site and Off-Site Emergency Plans
+    </div>
+    <div class="section-content" id="section7">
+      <p><b>On-Site Emergency Plan:</b> This is like a school’s fire drill plan, which focuses on keeping everyone safe right where they are.</p>
+      <p><b>Example:</b> If there’s a fire in a factory, an on-site plan tells workers how to safely exit and where to meet outside.</p>
+      <p><b>Off-Site Emergency Plan:</b> This plan is for emergencies that might affect the surrounding area, like the neighborhood.</p>
+      <p><b>Example:</b> If there’s a chemical spill in a factory, the off-site plan might tell nearby schools or homes to stay indoors or evacuate.</p>
+    </div>
+  </div>
+
+  <div class="progress" id="progress">Progress: 0%</div>
+
+</body>
+</html>
