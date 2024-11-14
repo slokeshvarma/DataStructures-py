@@ -1,85 +1,156 @@
-* {
+/* General Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f8fa;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f9;
-  color: #333;
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
+h2 {
+  color: #4a90e2;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Header */
 header {
-  background: #333;
-  color: #fff;
+  background: #2c3e50;
+  color: white;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 2rem;
-}
-
-nav {
-  margin: 2rem auto;
-  text-align: center;
-}
-
+/* Navigation */
 nav ul {
   list-style-type: none;
+  text-align: center;
+  padding: 0;
 }
 
 nav ul li {
-  display: block;
+  display: inline;
   margin: 0 1rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #007bff;
+  color: #4a90e2;
   font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.3s;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
   color: #0056b3;
 }
 
+/* Sections */
 .section {
-  padding: 1.5rem;
-  margin: 1rem auto;
-  background: #fff;
+  background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 700px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
 }
 
 .section-header {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
   color: #333;
   cursor: pointer;
-  font-weight: bold;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.section-header:hover {
+  background-color: #e0e0e0;
 }
 
 .section-content {
   display: none;
-  padding: 1rem 0;
+  padding-top: 10px;
+  font-size: 1rem;
+  color: #555;
 }
 
+.section-content p {
+  margin: 10px 0;
+}
+
+/* Quiz Styling */
+.quiz {
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.progress {
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: #27ae60;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #333;
+  background: #2c3e50;
   color: #fff;
   position: fixed;
   width: 100%;
   bottom: 0;
+  font-size: 0.9rem;
 }
 
-footer p {
-  margin: 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .section {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .section-header {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .progress {
+    font-size: 0.9rem;
+  }
 }
